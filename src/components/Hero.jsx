@@ -9,7 +9,7 @@ const Hero = () => {
       <div>
         <div>
           <h2 className="md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#0044ff] to-[#b300ff] ">
-            Virtual Reality
+            Virtual Realityyyy
           </h2>
           <h2 className="md:text-6xl text-4xl mb-4 mt-4 text-transparent bg-clip-text bg-gradient-to-r from-[#0044ff] to-[#b300ff] ">
             Business Solutions
