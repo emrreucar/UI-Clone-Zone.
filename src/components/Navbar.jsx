@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../assets/logo.png";
-import { RiMenu3Fill } from 'react-icons/ri';
-import { AiOutlineClose } from 'react-icons/ai'
+import { RiMenu3Fill } from "react-icons/ri";
+import { AiOutlineClose } from "react-icons/ai";
+import Link from "next/link";
 
 const Navbar = () => {
   const links = [
@@ -41,13 +42,18 @@ const Navbar = () => {
       {/* links start */}
       <div className="flex gap-10">
         <ul className="lg:flex hidden items-center justify-center gap-16">
-          {links.map(link => (
-            <li className="cursor-pointer opacity-80 hover:opacity-100 duration-300" key={link.id}>
-              {link.name}
+          {links.map((link) => (
+            <li
+              className="cursor-pointer opacity-80 hover:opacity-100 duration-300"
+              key={link.id}
+            >
+              <Link href='/'>{link.name}</Link>
             </li>
           ))}
         </ul>
-        <button className="py-2 px-4 bg-gradient-to-r from-[#2959dc] to-[#712be8] rounded-md lg:flex hidden">Contact Us</button>
+        <button className="py-2 px-4 bg-gradient-to-r from-[#2959dc] to-[#712be8] rounded-md lg:flex hidden">
+          Contact Us
+        </button>
       </div>
       {/* links end */}
     </div>
