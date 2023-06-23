@@ -6,7 +6,7 @@ import { BsPlayCircle } from "react-icons/bs";
 const Hero = () => {
   return (
     <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center gap-4 max-w-[1240px] h-full mt-[120px] ">
-      <div>
+      <div className="lg:mb-32">
         <div>
           <h2 className="md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#0044ff] to-[#b300ff] ">
             Virtual Reality
